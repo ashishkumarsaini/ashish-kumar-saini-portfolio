@@ -3,30 +3,33 @@ import { Icons } from "./contants";
 export const skillSectionData = {
   skillsCards: [
     {
-      title: "Frontend",
+      title: "Frontend Development",
       icon: Icons.code,
       skills: [
         { name: "React", level: 95 },
         { name: "TypeScript", level: 90 },
         { name: "Next.js", level: 85 },
         { name: "Tailwind CSS", level: 85 },
-        { name: "Vue.js", level: 75 },
-        { name: "Redux", level: 90 }
+        { name: "Shadcn", level: 90 },
+        { name: "Redux", level: 95 },
+        { name: "Storybook", level: 85 },
+        { name: "React Native", level: 80}
       ]
     },
     {
-      title: "Backend",
+      title: "Backend & API's",
       icon: Icons.server,
       skills: [
         { name: "Node.js", level: 90 },
-        { name: "Express", level: 85 },
+        { name: "Express.js", level: 85 },
         { name: "GraphQL", level: 75 },
         { name: "REST APIs", level: 95 },
-        { name: "WebSockets", level: 70 }
+        { name: "WebSockets", level: 70 },
+        { name: "OAuth & JWT", level: 85 }
       ]
     },
     {
-      title: "Database & Tools",
+      title: "Databases",
       icon: Icons.database,
       skills: [
         { name: "MongoDB", level: 80 },
@@ -34,12 +37,15 @@ export const skillSectionData = {
       ]
     },
     {
-      title: "DevOps & Cloud",
+      title: "Tools",
       icon: Icons.cloud,
       skills: [
-        { name: "Git", level: 95 },
+        { name: "Git", level: 90 },
+        { name: "GitHub", level: 95 },
         { name: "Vercel", level: 90 },
-        { name: "CI/CD", level: 80 }
+        { name: "CI/CD", level: 80 },
+        { name: "Sentry", level: 85 },
+        { name: "Lighthouse", level: 85}
       ]
     }
   ]
