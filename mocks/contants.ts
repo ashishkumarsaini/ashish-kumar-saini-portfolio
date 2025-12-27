@@ -17,5 +17,7 @@ export enum Icons {
   database = "database",
   code = "code",
   briefcase = "briefcase",
-  graduationCap = "graduationCap"
+  graduationCap = "graduationCap",
+  server = 'server',
+  cloud = "cloud"
 }

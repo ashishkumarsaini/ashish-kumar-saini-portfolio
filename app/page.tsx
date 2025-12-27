@@ -1,4 +1,4 @@
-import { AboutSection, ExperienceSection, HeroSection } from "../components/sections";
+import { AboutSection, ExperienceSection, HeroSection, SkillsSection } from "../components/sections";
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <HeroSection/>
       <AboutSection/>
       <ExperienceSection/>
+      <SkillsSection />
     </div>
   );
 }
