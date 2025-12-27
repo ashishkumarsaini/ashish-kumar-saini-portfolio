@@ -41,7 +41,6 @@ export const skillSectionData = {
       icon: Icons.cloud,
       skills: [
         { name: "Git", level: 90 },
-        { name: "GitHub", level: 95 },
         { name: "Vercel", level: 90 },
         { name: "CI/CD", level: 80 },
         { name: "Sentry", level: 85 },

@@ -38,7 +38,7 @@ export const SkillsSection = () => {
           transition={{ duration: 0.6 }}
           className="space-y-4 text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl">Skills & Technologies</h2>
+          <h2 className="text-4xl md:text-5xl font-bold">Skills & Technologies</h2>
           <p className="text-xl text-muted-foreground">
             Tools and technologies I work with
           </p>

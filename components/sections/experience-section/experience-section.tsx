@@ -29,7 +29,7 @@ export const ExperienceSection = ()=>{
           transition={{ duration: 0.6 }}
           className="space-y-4 text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl">Experience & Education</h2>
+          <h2 className="text-4xl md:text-5xl font-bold">Experience & Education</h2>
           <p className="text-xl text-muted-foreground">
             My professional journey and academic background
           </p>

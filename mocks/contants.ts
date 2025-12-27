@@ -19,5 +19,7 @@ export enum Icons {
   briefcase = "briefcase",
   graduationCap = "graduationCap",
   server = 'server',
-  cloud = "cloud"
+  cloud = "cloud",
+  phone = "phone",
+  map = "map",
 }

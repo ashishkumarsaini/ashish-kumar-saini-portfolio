@@ -1,5 +1,5 @@
 import { Icons } from "@/mocks/contants";
-import { Github, Linkedin, Mail, ArrowDown, Code2, Database, Laptop, Briefcase, GraduationCap, Server, Cloud } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowDown, Code2, Database, Laptop, Briefcase, GraduationCap, Server, Cloud, Phone, MapPin } from "lucide-react";
 
 export const getIcon = (iconName:string, props= {}) => {
   const iconProps = {
@@ -18,6 +18,8 @@ export const getIcon = (iconName:string, props= {}) => {
     case Icons.code: return <GraduationCap {...iconProps} />;
     case Icons.server: return <Server {...iconProps} />;
     case Icons.cloud: return <Cloud {...iconProps} />;
+    case Icons.phone: return <Phone {...iconProps} />;
+    case Icons.map: return <MapPin {...iconProps} />;
     default: return null;
   }
 }
