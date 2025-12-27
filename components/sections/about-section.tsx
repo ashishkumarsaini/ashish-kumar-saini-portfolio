@@ -52,31 +52,24 @@ export const AboutSection = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="grid md:grid-cols-3 gap-6 mb-12"
         >
-          {cards.map(({title, description, iconName}, index) => {
-            const Icon = getIcon(iconName);
-            if(!Icon){
-              return;
-            }
+          {cards.map(({title, description, iconName}, index) =>  (
+            <motion.div key={index} variants={cardVariants}>
+              <Card.CardContainer className="bg-dark hover:bg-accent transition-colors h-full group">
+                <Card.CardContent className="p-6 space-y-4">
+                  <div
 
-            return (
-              <motion.div key={index} variants={cardVariants}>
-                <Card.CardContainer className="bg-dark hover:bg-accent transition-colors h-full group">
-                  <Card.CardContent className="p-6 space-y-4">
-                    <div
-
-                      className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center"
-                    >
-                      <Icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <h3 className="text-xl">{title}</h3>
-                    <p className="text-muted-foreground">
-                      {description}
-                    </p>
-                  </Card.CardContent>
-                </Card.CardContainer>
-              </motion.div>
-            );
-          })}
+                    className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center"
+                  >
+                    {getIcon(iconName, {className: "h-6 w-6 text-primary"})}
+                  </div>
+                  <h3 className="text-xl">{title}</h3>
+                  <p className="text-muted-foreground">
+                    {description}
+                  </p>
+                </Card.CardContent>
+              </Card.CardContainer>
+            </motion.div>
+          ))}
         </motion.div>
 
         <motion.div

@@ -71,4 +71,4 @@ function Button({
   )
 }
 
-export { Button, buttonVariants, ButtonVariants, ButtonSizes }
+export { Button, ButtonVariants, ButtonSizes }

@@ -13,7 +13,7 @@ export const aboutSectionData = {
     {
       iconName: Icons.database,
       title: "Backend Proficient",
-      description: "Designing scalable APIs and databases with Node.js, PostgreSQL, and MongoDB"
+      description: "Designing scalable APIs and databases with Node.js, and MongoDB"
     },
     {
       iconName: Icons.code,

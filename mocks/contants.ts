@@ -15,5 +15,7 @@ export enum Icons {
   arrowDown = "arrowDown",
   laptop = "laptop",
   database = "database",
-  code = "code"
+  code = "code",
+  briefcase = "briefcase",
+  graduationCap = "graduationCap"
 }

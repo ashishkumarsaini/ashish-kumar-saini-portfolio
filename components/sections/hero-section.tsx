@@ -5,6 +5,7 @@ import { Button, ButtonSizes, ButtonVariants } from "../ui/button";
 import {homeSectionData} from '../../mocks/home-section';
 import { getIcon } from "../icons";
 import { ArrowDown } from "lucide-react";
+import { Icons } from "@/mocks/contants";
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
@@ -81,28 +82,21 @@ export const HeroSection = ()=> {
           transition={{ delay: 0.7, duration: 0.6 }}
           className="flex gap-4 justify-center pt-4"
         >
-          {homeSectionData.links.map(({iconName, href}, index) => {
-            const Icon = getIcon(iconName);
-
-            if(!Icon){
-              return;
-            };
-
-            return (
-              <motion.div
-                  key={index}
-                  whileHover={{ scale: 1.2, rotate: 5 }}
-                  whileTap={{ scale: 0.9 }}
-                  tabIndex={-1}
-                >
-                  <Button variant={ButtonVariants.GHOST} size="icon">
-                    <a href={href} target="_blank" rel="noopener noreferrer" tabIndex={-1}>
-                      <Icon className="h-5 w-5" tabIndex={-1}/>
-                    </a>
-                  </Button>
-                </motion.div>
-            )
-          })}
+          {homeSectionData.links.map(({iconName, href}, index) => (
+            <motion.div
+                key={index}
+                whileHover={{ scale: 1.2, rotate: 5 }}
+                whileTap={{ scale: 0.9 }}
+                tabIndex={-1}
+              >
+                <Button variant={ButtonVariants.GHOST} size="icon">
+                  <a href={href} target="_blank" rel="noopener noreferrer" tabIndex={-1}>
+                    {getIcon(iconName, {className: "h-5 w-5"})}
+                  </a>
+                </Button>
+              </motion.div>
+          )
+        )}
         </motion.div>
       </div>
       <motion.button
@@ -116,7 +110,7 @@ export const HeroSection = ()=> {
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
         tabIndex={-1}
       >
-        <ArrowDown className="h-6 w-6 text-muted-foreground" />
+        {getIcon(Icons.arrowDown, {className: "h-6 w-6 text-muted-foreground"})}
       </motion.button>
     </section>
   );
