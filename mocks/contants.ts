@@ -12,5 +12,8 @@ export enum Icons {
   github = "github",
   linkedIn = "linkedIn",
   mail = "mail",
-  arrowDown = "arrowDown"
+  arrowDown = "arrowDown",
+  laptop = "laptop",
+  database = "database",
+  code = "code"
 }
