@@ -3,11 +3,9 @@ import { AboutSection, ContactSection, ExperienceSection, HeroSection, SkillsSec
 export default function Home() {
   return (
     <div>
-      <HeroSection/>
-      <AboutSection/>
-      <ExperienceSection/>
-      <SkillsSection />
-      <ContactSection />
+      <HeroSection />
+      <HeroSection />
+      <HeroSection />
     </div>
   );
 }
