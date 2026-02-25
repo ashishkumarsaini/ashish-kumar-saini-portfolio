@@ -2,9 +2,8 @@
 
 import { motion } from "motion/react";
 import { Button, ButtonSizes, ButtonVariants } from "../ui/button";
-import {homeSectionData} from '../../mocks/home-section';
+import { homeSectionData } from '../../mocks/home-section';
 import { getIcon } from "../icons";
-import { ArrowDown } from "lucide-react";
 import { Icons } from "@/mocks/contants";
 
 const scrollToSection = (id: string) => {
@@ -12,7 +11,7 @@ const scrollToSection = (id: string) => {
   element?.scrollIntoView({ behavior: "smooth" });
 };
 
-export const HeroSection = ()=> {
+export const HeroSection = () => {
   return (
     <section className="min-h-screen flex items-center justify-center" id="hero">
       <div className="text-center space-y-8">
@@ -63,17 +62,17 @@ export const HeroSection = ()=> {
           transition={{ delay: 0.6, duration: 0.6 }}
           className="flex gap-4 justify-center flex-wrap"
         >
-           {homeSectionData.cta.map(({title, sectionId, isMainCTA}) => (
-              <motion.div key={title} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button
-                  size={ButtonSizes.LARGE}
-                  variant={isMainCTA ? ButtonVariants.DEFAULT : ButtonVariants.OUTLINE}
-                  onClick={() => scrollToSection(sectionId)}
-                >
-                  {title}
-                </Button>
-              </motion.div>
-            ))}
+          {homeSectionData.cta.map(({ title, sectionId, isMainCTA }) => (
+            <motion.div key={title} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button
+                size={ButtonSizes.LARGE}
+                variant={isMainCTA ? ButtonVariants.DEFAULT : ButtonVariants.OUTLINE}
+                onClick={() => scrollToSection(sectionId)}
+              >
+                {title}
+              </Button>
+            </motion.div>
+          ))}
         </motion.div>
 
         <motion.div
@@ -82,21 +81,21 @@ export const HeroSection = ()=> {
           transition={{ delay: 0.7, duration: 0.6 }}
           className="flex gap-4 justify-center pt-4"
         >
-          {homeSectionData.links.map(({iconName, href}, index) => (
+          {homeSectionData.links.map(({ iconName, href }, index) => (
             <motion.div
-                key={index}
-                whileHover={{ scale: 1.2, rotate: 5 }}
-                whileTap={{ scale: 0.9 }}
-                tabIndex={-1}
-              >
-                <Button variant={ButtonVariants.GHOST} size="icon">
-                  <a href={href} target="_blank" rel="noopener noreferrer" tabIndex={-1}>
-                    {getIcon(iconName, {className: "h-5 w-5"})}
-                  </a>
-                </Button>
-              </motion.div>
+              key={index}
+              whileHover={{ scale: 1.2, rotate: 5 }}
+              whileTap={{ scale: 0.9 }}
+              tabIndex={-1}
+            >
+              <Button variant={ButtonVariants.GHOST} size="icon">
+                <a href={href} target="_blank" rel="noopener noreferrer" tabIndex={-1}>
+                  {getIcon(iconName, { className: "h-5 w-5" })}
+                </a>
+              </Button>
+            </motion.div>
           )
-        )}
+          )}
         </motion.div>
       </div>
       <motion.button
@@ -110,7 +109,7 @@ export const HeroSection = ()=> {
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
         tabIndex={-1}
       >
-        {getIcon(Icons.arrowDown, {className: "h-6 w-6 text-muted-foreground"})}
+        {getIcon(Icons.arrowDown, { className: "h-6 w-6 text-muted-foreground" })}
       </motion.button>
     </section>
   );
