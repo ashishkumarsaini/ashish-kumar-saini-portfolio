@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Inter_Tight } from "next/font/google";
 import "./globals.css";
-// import { Header } from "@/components/header";
-// import { Footer } from "@/components/footer";
 
-const roboto = Roboto({
+const roboto = Inter_Tight({
   subsets: ["latin"],
   weight: ['400', '700']
 });
@@ -22,13 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} antialiased dark`}
+        className={`${roboto.className} antialiased`}
       >
-        {/* <Header /> */}
         <main className="max-w-[1480px] mx-auto">
           {children}
         </main>
-        {/* <Footer /> */}
       </body>
     </html>
   );

@@ -3,9 +3,9 @@ import { AboutSection, ContactSection, ExperienceSection, HeroSection, SkillsSec
 export default function Home() {
   return (
     <div>
-      <HeroSection/>
-      <AboutSection/>
-      <ExperienceSection/>
+      <HeroSection />
+      <AboutSection />
+      <ExperienceSection />
       <SkillsSection />
       <ContactSection />
     </div>
