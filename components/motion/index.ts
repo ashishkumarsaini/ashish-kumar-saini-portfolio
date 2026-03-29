@@ -1,1 +1,2 @@
-export {MotionElement} from './motion-element'
+export {MotionElement} from './motion-element';
+export {RotateWords} from './rotate-text';

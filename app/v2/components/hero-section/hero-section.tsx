@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { RotateWords } from "./rotate-text"
+import { RotateWords } from "@/components/motion";
 import { ArrowRight, ArrowUpRight, Github, Linkedin } from "lucide-react"
 import { Button, ButtonSizes, ButtonVariants } from "@/components/ui/button";
 

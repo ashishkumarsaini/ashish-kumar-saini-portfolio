@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter_Tight } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 const roboto = Inter_Tight({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
         <main className="max-w-[1500px] mx-auto px-4 sm:px-8">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

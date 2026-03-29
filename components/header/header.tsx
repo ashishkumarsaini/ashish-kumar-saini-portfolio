@@ -26,7 +26,7 @@ export const Header = () => {
           <div className="flex items-center gap-2">
             <Link href='/contact' className="block max-sm:hidden">
               <Button>
-                {`Let's Connect`}
+                <span className="text-[15px]">{`Let's Connect`}</span>
                 {getIcon(Icons.arrowRight, { className: "h-6 w-6 text-muted-foreground" })}
               </Button>
             </Link>

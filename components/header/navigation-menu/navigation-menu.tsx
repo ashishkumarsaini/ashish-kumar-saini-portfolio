@@ -33,12 +33,12 @@ export const NavigationMenu: FC<{
             <div className="flex items-center gap-2">
               <Link href='/contact' className="block max-sm:hidden">
                 <Button className="bg-secondary text-primary hover:bg-secondary">
-                  {`Let's Connect`}
+                  <span className="text-[15px]">{`Let's Connect`}</span>
                   {getIcon(Icons.arrowRight, { className: "h-6 w-6 text-muted-foreground" })}
                 </Button>
               </Link>
               <Button variant={ButtonVariants.OUTLINE} onClick={onClose} className="bg-accent-foreground">
-                <span className="max-sm:hidden">{`Close Menu`}</span>
+                <span className="max-sm:hidden text-[15px]">{`Close Menu`}</span>
                 <X />
               </Button>
             </div>
