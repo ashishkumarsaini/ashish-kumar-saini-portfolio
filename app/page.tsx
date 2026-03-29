@@ -1,4 +1,6 @@
 import { AboutSection, ContactSection, ExperienceSection, HeroSection, SkillsSection } from "../components/sections";
+import "./globals.css";
+
 
 export default function Home() {
   return (
