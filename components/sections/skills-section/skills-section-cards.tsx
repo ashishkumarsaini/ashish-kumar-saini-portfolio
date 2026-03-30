@@ -7,11 +7,11 @@ import { getIcon } from "@/components/icons";
 type SkillsSectionCardProps = {
   title: string,
   icon: Icons,
-  skills: {name: string, level: number}[]
+  skills: { name: string, level: number }[]
 };
-export const SkillsSectionCard: FC<SkillsSectionCardProps> = ({title, icon, skills})=>{
+export const SkillsSectionCard: FC<SkillsSectionCardProps> = ({ title, icon, skills }) => {
 
-  if(!skills.length){
+  if (!skills.length) {
     return;
   }
 
@@ -20,7 +20,7 @@ export const SkillsSectionCard: FC<SkillsSectionCardProps> = ({title, icon, skil
       <Card.CardHeader>
         <Card.CardTitle className="flex items-center gap-3">
           <div className={`h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center`}>
-            {getIcon(icon, {className: "h-6 w-6"})}
+            {getIcon(icon, { className: "h-6 w-6" })}
           </div>
           {title}
         </Card.CardTitle>

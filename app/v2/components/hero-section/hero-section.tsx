@@ -5,7 +5,7 @@ import { Button, ButtonSizes, ButtonVariants } from "@/components/ui/button";
 
 export const HeroSection = () => {
   return (
-    <div className="mt-15 mb-15 md:mt-20 md:mb-20 lg:mt-25 lg:mb-30">
+    <section className="pt-8 md:pt-10 lg:pt-12">
       <div>
         <p className="text-[25px]">Hello! I’m Ashish.</p>
         <p className="text-[50px] md:text-[75px] lg:text-[95px] font-bold leading-[60px] md:leading-[100px]">
@@ -49,6 +49,6 @@ export const HeroSection = () => {
           </Button>
         </Link>
       </div>
-    </div>
+    </section>
   )
 }

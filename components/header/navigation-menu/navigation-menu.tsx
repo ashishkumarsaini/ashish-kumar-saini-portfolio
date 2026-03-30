@@ -38,19 +38,19 @@ export const NavigationMenu: FC<{
                 </Button>
               </Link>
               <Button variant={ButtonVariants.OUTLINE} onClick={onClose} className="bg-accent-foreground">
-                <span className="max-sm:hidden text-[15px]">{`Close Menu`}</span>
+                {/* <span className="max-sm:hidden text-[15px]">{`Close Menu`}</span> */}
                 <X />
               </Button>
             </div>
           </div>
           <div className="max-h-[calc(100vh-80px)] overflow-auto no-scrollbar">
-            <div className="py-10 px-4 sm:px-8 border-b border-muted-foreground">
+            <div className="py-6 px-4 sm:px-8 border-b border-muted-foreground">
               <nav>
                 <ul>
                   <li>
                     <Link href="/" className="flex items-center justify-between">
                       <p className="text-[35px] md:text-[70px] font-bold">
-                        Home.
+                        <span className="hover:underline decoration-3">Home.</span>
                         <span className="text-muted-foreground text-[15px]"> (01)</span>
                       </p>
                       <ArrowRight />
@@ -59,7 +59,7 @@ export const NavigationMenu: FC<{
                   <li>
                     <Link href="/projects" className="flex items-center justify-between">
                       <p className="text-[35px] md:text-[70px] font-bold">
-                        Projects.
+                        <span className="hover:underline decoration-3">Projects.</span>
                         <span className="text-muted-foreground text-[15px]"> (02)</span>
                       </p>
                       <ArrowRight />
@@ -68,7 +68,7 @@ export const NavigationMenu: FC<{
                   <li>
                     <Link href="/skills-and-experiences" className="flex items-center justify-between">
                       <p className="text-[35px] md:text-[70px] font-bold">
-                        Skills & Exprience.
+                        <span className="hover:underline decoration-3">Skills & Exprience.</span>
                         <span className="text-muted-foreground text-[15px]"> (03)</span>
                       </p>
                       <ArrowRight />
@@ -77,7 +77,7 @@ export const NavigationMenu: FC<{
                   <li>
                     <Link href="/blogs" className="flex items-center justify-between">
                       <p className="text-[35px] md:text-[70px] font-bold">
-                        Blogs.
+                        <span className="hover:underline decoration-3">Blogs.</span>
                         <span className="text-muted-foreground text-[15px]"> (04)</span>
                       </p>
                       <ArrowRight />
@@ -86,13 +86,13 @@ export const NavigationMenu: FC<{
                 </ul>
               </nav>
             </div>
-            <div className="py-10 px-4 sm:px-8 border-b border-muted-foreground">
+            <div className="py-7 px-4 sm:px-8 border-b border-muted-foreground">
               <div className="text-xl font-bold">
                 <span className="text-muted-foreground">Follow</span>
                 <span>.</span>
               </div>
               <div className="text-xl font-bold">
-                <div className="flex mt-10 max-sm:flex-col-reverse items-end sm:items-center justify-between gap-5">
+                <div className="flex mt-7 max-sm:flex-col-reverse items-end sm:items-center justify-between gap-5">
                   <div className="flex items-center gap-4">
                     <Link href="https://www.linkedin.com/in/devaksaini/" target="_blank">
                       <Button variant={ButtonVariants.OUTLINE} className="bg-accent-foreground">

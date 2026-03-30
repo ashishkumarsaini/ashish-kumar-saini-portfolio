@@ -5,14 +5,14 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="px-1 sm:px-4">
+    <div className="px-1 sm:px-4 pt-20 md:pt-25 lg:pt-28">
       <div className="bg-accent-foreground text-secondary rounded-t-[20px]">
         <div className="max-w-[1500px] mx-auto px-4 sm:px-8 py-20 flex flex-col">
-          <div className="text-[50px] md:text-[75px] lg:text-[95px] font-bold leading-[60px] md:leading-[100px]">
+          <div className="text-[40px] md:text-[65px] lg:text-[75px] font-bold leading-[60px] md:leading-[100px]">
             <span>{`Let’s build something `}</span>
-            <span className="text-muted-foreground">impactful.</span>
+            <p className="text-muted-foreground">impactful.</p>
           </div>
-          <Link href='/contact' className="mt-6 text-[20px] md:text-[35px] lg:text-[55px] font-bold flex items-center gap-2 md:gap-4">
+          <Link href='/contact' className="mt-6 text-[20px] md:text-[35px] lg:text-[45px] font-bold flex items-center gap-2 md:gap-4">
             <span>works.ashishsaini<span className="text-muted-foreground">@gmail.com</span></span>
             <span className="md:bg-muted-foreground p-1 md:p-2 rounded-full hover:translate-x-0.5 transition-all duration-300">
               <ArrowRight />
