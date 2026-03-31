@@ -17,7 +17,7 @@ export const Header = () => {
     <>
       <header className="w-full fixed top-0 left-0 right-0 z-50 duration-300 bg-background/80 backdrop-blur-xs border-b border-border">
         <div className="h-20 max-w-[1500px] mx-auto px-4 sm:px-8 flex items-center justify-between">
-          <Link href="/">
+          <Link href="/v2">
             <div className="text-xl font-bold">
               <span>ashishkumarsaini</span>
               <span className="text-muted-foreground">.dev</span>

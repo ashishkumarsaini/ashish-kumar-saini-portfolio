@@ -48,8 +48,8 @@ export const NavigationMenu: FC<{
               <nav>
                 <ul>
                   <li>
-                    <Link href="/" className="flex items-center justify-between">
-                      <p className="text-[35px] md:text-[70px] font-bold">
+                    <Link href="/" className="flex items-center justify-between" onClick={onClose}>
+                      <p className="text-[35px] md:text-[55px] font-bold">
                         <span className="hover:underline decoration-3">Home.</span>
                         <span className="text-muted-foreground text-[15px]"> (01)</span>
                       </p>
@@ -57,28 +57,37 @@ export const NavigationMenu: FC<{
                     </Link>
                   </li>
                   <li>
-                    <Link href="/projects" className="flex items-center justify-between">
-                      <p className="text-[35px] md:text-[70px] font-bold">
-                        <span className="hover:underline decoration-3">Projects.</span>
+                    <Link href="/about" className="flex items-center justify-between" onClick={onClose}>
+                      <p className="text-[35px] md:text-[55px] font-bold">
+                        <span className="hover:underline decoration-3">About Me.</span>
                         <span className="text-muted-foreground text-[15px]"> (02)</span>
                       </p>
                       <ArrowRight />
                     </Link>
                   </li>
                   <li>
-                    <Link href="/skills-and-experiences" className="flex items-center justify-between">
-                      <p className="text-[35px] md:text-[70px] font-bold">
-                        <span className="hover:underline decoration-3">Skills & Exprience.</span>
+                    <Link href="/projects" className="flex items-center justify-between" onClick={onClose}>
+                      <p className="text-[35px] md:text-[55px] font-bold">
+                        <span className="hover:underline decoration-3">Projects.</span>
                         <span className="text-muted-foreground text-[15px]"> (03)</span>
                       </p>
                       <ArrowRight />
                     </Link>
                   </li>
                   <li>
-                    <Link href="/blogs" className="flex items-center justify-between">
-                      <p className="text-[35px] md:text-[70px] font-bold">
-                        <span className="hover:underline decoration-3">Blogs.</span>
+                    <Link href="/skills-and-experiences" className="flex items-center justify-between" onClick={onClose}>
+                      <p className="text-[35px] md:text-[55px] font-bold">
+                        <span className="hover:underline decoration-3">Skills & Exprience.</span>
                         <span className="text-muted-foreground text-[15px]"> (04)</span>
+                      </p>
+                      <ArrowRight />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/blogs" className="flex items-center justify-between" onClick={onClose}>
+                      <p className="text-[35px] md:text-[55px] font-bold">
+                        <span className="hover:underline decoration-3">Blogs.</span>
+                        <span className="text-muted-foreground text-[15px]"> (05)</span>
                       </p>
                       <ArrowRight />
                     </Link>
