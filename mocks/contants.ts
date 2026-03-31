@@ -13,6 +13,7 @@ export enum Icons {
   linkedIn = "linkedIn",
   mail = "mail",
   arrowDown = "arrowDown",
+  arrowRight = 'arrowRight',
   laptop = "laptop",
   database = "database",
   code = "code",
@@ -22,4 +23,5 @@ export enum Icons {
   cloud = "cloud",
   phone = "phone",
   map = "map",
+  hamburger = "hamburger"
 }

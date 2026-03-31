@@ -1,66 +1,70 @@
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
-import { Button, ButtonVariants } from "../ui/button";
+import { Github, Linkedin, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border bg-card">
-      <div className="max-w-6xl mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
-          <div>
-            <h3 className="mb-4">Ashish Kumar Saini</h3>
-            <p className="text-muted-foreground">
-              Full Stack Developer crafting digital experiences with passion and precision.
-            </p>
+    <div className="px-1 sm:px-4 pt-20 md:pt-25 lg:pt-28">
+      <div className="bg-accent-foreground text-secondary rounded-t-[20px]">
+        <div className="max-w-[1500px] mx-auto px-4 sm:px-8 py-20 flex flex-col">
+          <div className="text-[40px] md:text-[65px] lg:text-[75px] font-bold leading-[60px] md:leading-[100px]">
+            <span>{`Let’s build something `}</span>
+            <p className="text-muted-foreground">impactful.</p>
           </div>
-
-          <div>
-            <h4 className="mb-4">Quick Links</h4>
-            <div className="flex flex-col gap-2">
-              <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-                About
-              </a>
-              <a href="#skills" className="text-muted-foreground hover:text-foreground transition-colors">
-                Skills
-              </a>
-              <a href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">
-                Projects
-              </a>
-              <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
-                Contact
-              </a>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="mb-4">Connect</h4>
-            <div className="flex gap-2">
-              <Button variant={ButtonVariants.OUTLINE} size="icon" asChild>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                  <Github className="h-5 w-5" />
-                </a>
-              </Button>
-              <Button variant={ButtonVariants.OUTLINE} size="icon" asChild>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="h-5 w-5" />
-                </a>
-              </Button>
-              <Button variant={ButtonVariants.OUTLINE} size="icon" asChild>
-                <a href="mailto:alex@example.com">
-                  <Mail className="h-5 w-5" />
-                </a>
-              </Button>
-            </div>
-          </div>
-        </div>
-
-        <div className="pt-8 border-t border-border text-center text-muted-foreground">
-          <p className="flex items-center justify-center gap-2">
-            © {currentYear} Ashish Kumar Saini. Built with <Heart className="h-4 w-4 text-red-500 fill-red-500" /> using React & Shadcn
-          </p>
+          <Link href='/contact' className="mt-6 text-[20px] md:text-[35px] lg:text-[45px] font-bold flex items-center gap-2 md:gap-4">
+            <span>works.ashishsaini<span className="text-muted-foreground">@gmail.com</span></span>
+            <span className="md:bg-muted-foreground p-1 md:p-2 rounded-full hover:translate-x-0.5 transition-all duration-300">
+              <ArrowRight />
+            </span>
+          </Link>
         </div>
       </div>
-    </footer>
+      <footer className="bg-accent-foreground text-secondary border-t border-muted-foreground">
+        <div className="max-w-[1500px] mx-auto px-4 sm:px-8 py-20">
+          <div className="flex flex-col lg:flex-row gap-5 justify-between">
+            <div>
+              <div className="text-4xl font-bold">
+                <span>ashishkumarsaini</span>
+                <span className="text-muted-foreground">.dev</span>
+              </div>
+              <p className="mt-4">
+                Full Stack Developer crafting digital experiences with passion and precision.
+              </p>
+              <div className="flex items-center gap-4 mt-4">
+                <Link href="https://www.linkedin.com/in/devaksaini/" target="_blank">
+                  <Linkedin />
+                </Link>
+                <Link href="https://github.com/ashishkumarsaini" target="_blank">
+                  <Github />
+                </Link>
+              </div>
+            </div>
+            <div className="lg:mr-20">
+              <h4 className="mb-4">Quick Links</h4>
+              <div className="flex flex-col gap-2">
+                <a href="#about">
+                  About
+                </a>
+                <a href="#skills">
+                  Skills
+                </a>
+                <a href="#projects">
+                  Projects
+                </a>
+                <a href="#contact">
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="py-8 text-center border-t border-muted-foreground">
+          <p className="flex items-center justify-center gap-2">
+            © {currentYear} Ashish Kumar Saini.
+          </p>
+        </div>
+      </footer>
+    </div>
   );
 }

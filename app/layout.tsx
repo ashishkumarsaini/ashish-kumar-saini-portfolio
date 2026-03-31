@@ -1,4 +1,13 @@
 import type { Metadata } from "next";
+import { Inter_Tight } from "next/font/google";
+import "./globals.css";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+
+const roboto = Inter_Tight({
+  subsets: ["latin"],
+  weight: ['400', '700']
+});
 
 export const metadata: Metadata = {
   title: "Ashish Kumar Saini",
@@ -11,8 +20,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="no-scrollbar scroll-smooth">
-      {children}
+    <html lang="en">
+      <body
+        className={`${roboto.className} antialiased`}
+      >
+        <Header />
+        <main className="max-w-[1500px] mx-auto px-4 sm:px-8">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   );
 }
