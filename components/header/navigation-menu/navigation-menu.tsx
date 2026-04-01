@@ -21,27 +21,10 @@ export const NavigationMenu: FC<{
   return (
     <div>
       <div className={cn("bg-muted-foreground opacity-50 fixed top-0 left-0 right-0 h-screen w-full hidden", { "block": shouldShowNavigation })} onClick={onClose} />
-      <div className={cn("fixed bg-accent-foreground text-secondary z-51 w-full l-0 r-0 -translate-y-full transition-all duration-300", { "translate-y-0": shouldShowNavigation })}>
+      <div className={cn("fixed bg-accent-foreground text-secondary z-50 w-full l-0 r-0 -translate-y-full transition-all duration-300", { "translate-y-0": shouldShowNavigation })}>
         <div className="max-w-[1500px] mx-auto">
-          <div className="h-20 w-full border-b border-muted-foreground px-4 sm:px-8 flex items-center justify-between">
-            <Link href="/" onClick={onClose}>
-              <div className="text-xl font-bold">
-                <span>ashishkumarsaini</span>
-                <span className="text-muted-foreground">.dev</span>
-              </div>
-            </Link>
-            <div className="flex items-center gap-2">
-              <Link href='/contact' className="block max-sm:hidden">
-                <Button className="bg-secondary text-primary hover:bg-secondary">
-                  <span className="text-[15px]">{`Let's Connect`}</span>
-                  {getIcon(Icons.arrowRight, { className: "h-6 w-6 text-muted-foreground" })}
-                </Button>
-              </Link>
-              <Button variant={ButtonVariants.OUTLINE} onClick={onClose} className="bg-accent-foreground">
-                {/* <span className="max-sm:hidden text-[15px]">{`Close Menu`}</span> */}
-                <X />
-              </Button>
-            </div>
+          <div className="h-20 w-full px-4 sm:px-8 flex items-center justify-between">
+
           </div>
           <div className="max-h-[calc(100vh-80px)] overflow-auto no-scrollbar">
             <div className="py-6 px-4 sm:px-8 border-b border-muted-foreground">
@@ -66,18 +49,18 @@ export const NavigationMenu: FC<{
                     </Link>
                   </li>
                   <li>
-                    <Link href="/projects" className="flex items-center justify-between" onClick={onClose}>
+                    <Link href="/skills-and-experience" className="flex items-center justify-between" onClick={onClose}>
                       <p className="text-[35px] md:text-[55px] font-bold">
-                        <span className="hover:underline decoration-3">Projects.</span>
+                        <span className="hover:underline decoration-3">Skills & Exprience.</span>
                         <span className="text-muted-foreground text-[15px]"> (03)</span>
                       </p>
                       <ArrowRight />
                     </Link>
                   </li>
                   <li>
-                    <Link href="/skills-and-experiences" className="flex items-center justify-between" onClick={onClose}>
+                    <Link href="/projects" className="flex items-center justify-between" onClick={onClose}>
                       <p className="text-[35px] md:text-[55px] font-bold">
-                        <span className="hover:underline decoration-3">Skills & Exprience.</span>
+                        <span className="hover:underline decoration-3">Projects.</span>
                         <span className="text-muted-foreground text-[15px]"> (04)</span>
                       </p>
                       <ArrowRight />

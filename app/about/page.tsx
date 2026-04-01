@@ -17,12 +17,20 @@ const AboutMePage = () => {
               <p className="text-[20px] mt-7">
                 I’m a full-stack developer with a strong focus on building modern web applications that are fast, scalable, and user-friendly. Over the past 5+ years, I’ve developed a deep understanding of both frontend and backend systems, allowing me to work across the entire product lifecycle—from concept to deployment.
               </p>
+              <div className="mt-7">
+                <Link href='/contact'>
+                  <Button size={ButtonSizes.XLARGE} className="text-[18px]">
+                    {`Let's Connect`}
+                    <ArrowRight />
+                  </Button>
+                </Link>
+              </div>
             </div>
             <div className="col-span-12 lg:col-span-6 aspect-video relative rounded-[10px] overflow-hidden">
               <Image fill src='/about.png' alt="About Cover Image" className="absolute" style={{ objectFit: 'cover' }} />
             </div>
           </div>
-          <div className="grid grid-cols-12 gap-10 pt-20 lg:pt-40">
+          <div className="grid grid-cols-12 gap-10 pt-20 lg:pt-30">
             <div className="col-span-12 max-lg:order-2 lg:col-span-6 aspect-video relative rounded-[10px] overflow-hidden">
               <Image fill src='/about-2.png' alt="About Cover Image" className="absolute" style={{ objectFit: 'cover' }} />
             </div>
@@ -33,9 +41,17 @@ const AboutMePage = () => {
               <p className="text-[20px] mt-7">
                 Outside of work, I spend time exploring new technologies, building side projects, and continuously refining my skills. I believe in learning by building and constantly pushing my limits to grow as a developer.
               </p>
+              <div className="mt-7">
+                <Link href='/skills-and-experience'>
+                  <Button size={ButtonSizes.XLARGE} className="text-[18px]">
+                    {`Skills and Experiences`}
+                    <ArrowRight />
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
-          <div className="grid grid-cols-12 gap-10 pt-20 lg:pt-40">
+          <div className="grid grid-cols-12 gap-10 pt-20 lg:pt-30">
             <div className="col-span-12 lg:col-span-6 flex flex-row lg:flex-col gap-10">
               <div>
                 <p className="text-[50px] md:text-[75px] lg:text-[95px] font-bold leading-[60px] md:leading-[100px]">
@@ -58,16 +74,16 @@ const AboutMePage = () => {
                 Currently, I’m exploring advanced frontend patterns, system design, and performance engineering to build even more efficient and resilient applications.
               </p>
               <div className="mt-7">
-                <Link href='/contact'>
+                <Link href='/projects'>
                   <Button size={ButtonSizes.XLARGE} className="text-[18px]">
-                    {`Let's Connect`}
+                    {`Explore Projects`}
                     <ArrowRight />
                   </Button>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-12 gap-10 pt-20 lg:pt-40">
+          <div className="grid grid-cols-12 gap-10 pt-20 lg:pt-30">
             <div className="col-span-12 lg:col-span-6">
               <p className="text-[35px] md:text-[55px] lg:text-[75px] font-bold leading-[60px] md:leading-[100px]">
                 Certifications
