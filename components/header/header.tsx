@@ -19,7 +19,7 @@ export const Header = () => {
     <>
       <header className={cn("w-full fixed top-0 left-0 right-0 z-51 duration-300 bg-background/80 backdrop-blur-xs border-b border-border", { 'bg-primary backdrop-blur-none border-b-muted-foreground': shouldShowNavigation })}>
         <div className="h-20 max-w-[1500px] mx-auto px-4 sm:px-8 flex items-center justify-between">
-          <Link href="/v2">
+          <Link href="/">
             <div className="text-xl font-bold">
               <span className={cn({ 'text-secondary': shouldShowNavigation })}>ashishkumarsaini</span>
               <span className="text-muted-foreground">.dev</span>
