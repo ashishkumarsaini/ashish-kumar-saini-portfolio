@@ -25,7 +25,7 @@ export default function RootLayout({
         className={`${roboto.className} antialiased`}
       >
         {/* <Header /> */}
-        <main className="max-w-[1500px] mx-auto px-4 sm:px-8">
+        <main className="mx-auto">
           {children}
         </main>
         {/* <Footer /> */}
