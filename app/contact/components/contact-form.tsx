@@ -107,6 +107,7 @@ export const ContactForm = () => {
                   className={"sr-only"}
                   aria-describedby="topic-hint"
                   checked={checked}
+                  onChange={() => handleChangeData('topic', value)}
                 />
                 <label
                   htmlFor={inputId}

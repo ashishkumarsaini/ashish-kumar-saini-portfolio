@@ -1,4 +1,4 @@
-import { Button, ButtonVariants } from "@/components/ui/button"
+import { Button, ButtonSizes, ButtonVariants } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -22,9 +22,9 @@ export const AboutSection = () => {
             I specialize in creating seamless digital experiences across the entire stack—from crafting
             intuitive user interfaces to architecting robust backend systems.
           </p>
-          <Link href="/about" className="flex items-center justify-end">
-            <Button variant={ButtonVariants.LINK} className="flex items-center underline">
-              <span className="text-[22px]">More</span>
+          <Link href='/about'>
+            <Button size={ButtonSizes.XLARGE} className="text-[18px]">
+              {`More about me`}
               <ArrowRight />
             </Button>
           </Link>
