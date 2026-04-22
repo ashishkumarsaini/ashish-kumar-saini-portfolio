@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { ChevronRight, Menu } from "lucide-react";
 
-import { TopDrawer } from "../top-drawer";
+import { TopDrawer } from "@/components/top-drawer";
 
 type NavLink = { label: string; href: string };
 
