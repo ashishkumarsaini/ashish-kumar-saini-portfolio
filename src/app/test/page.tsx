@@ -1,3 +1,4 @@
+import { Button, ButtonSize, ButtonVariant } from "@/components/button";
 import { Heading, HeadingSize, Text, TextSize } from "@/components/typography";
 
 const TestPage = () => {
@@ -24,6 +25,13 @@ const TestPage = () => {
       <Heading size={HeadingSize.xs}>xs</Heading>
       <Heading size={HeadingSize.xs}>xs</Heading>
       <Heading size={HeadingSize.xs}>xs</Heading>
+      Button
+      <Button size={ButtonSize.xs}>xs</Button>
+      <Button size={ButtonSize.sm}>sm</Button>
+      <Button size={ButtonSize.base}>base</Button>
+      <Button size={ButtonSize.lg}>lg</Button>
+      <Button size={ButtonSize.lg} variant={ButtonVariant.primary}>primary</Button>
+      <Button size={ButtonSize.lg} variant={ButtonVariant.secondary}>secondary</Button>
     </div>
   )
 }

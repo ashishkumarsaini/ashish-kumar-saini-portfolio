@@ -9,6 +9,7 @@ export enum TextType {
 }
 
 export enum TextSize {
+  xxs = "xxs",
   xs = "xs",
   sm = "sm",
   base = "base",
@@ -19,17 +20,18 @@ export enum TextSize {
   xxxxl = 'xxxxl',
 }
 
-const textVariants = cva("", {
+const textVariants = cva("antialiased", {
   variants: {
     size: {
+      [TextSize.xxs]: "text-xs",
       [TextSize.xs]: "text-sm",
       [TextSize.sm]: "text-base",
       [TextSize.base]: "text-lg",
-      [TextSize.lg]: "text-xl",
-      [TextSize.xl]: "text-2xl",
-      [TextSize.xxl]: "text-3xl",
-      [TextSize.xxxl]: "text-4xl",
-      [TextSize.xxxxl]: "text-5xl",
+      [TextSize.lg]: "text-2xl",
+      [TextSize.xl]: "text-3xl",
+      [TextSize.xxl]: "text-4xl",
+      [TextSize.xxxl]: "text-5xl",
+      [TextSize.xxxxl]: "text-6xl",
     },
   },
   defaultVariants: {
