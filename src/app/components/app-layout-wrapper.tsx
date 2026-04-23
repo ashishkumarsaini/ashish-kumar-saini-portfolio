@@ -6,7 +6,7 @@ import { FC, ReactNode, useState } from "react"
 import { NavigationMenu } from "./navigation-menu";
 
 export const AppLayoutWrapper: FC<{ children: ReactNode }> = ({ children }) => {
-  const [isOpened, setIsOpened] = useState(true);
+  const [isOpened, setIsOpened] = useState(false);
   const handleToggle = () => {
     setIsOpened(!isOpened);
   };

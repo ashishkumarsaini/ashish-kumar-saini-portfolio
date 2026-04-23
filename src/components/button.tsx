@@ -8,7 +8,8 @@ export enum ButtonSize {
   xs = 'xs',
   sm = 'sm',
   base = 'base',
-  lg = 'lg'
+  lg = 'lg',
+  xl = 'xl'
 }
 
 export enum ButtonVariant {
@@ -23,7 +24,8 @@ const buttonVariants = cva('tracking-wide block rounded-sm cursor-pointer', {
       [ButtonSize.xs]: "h-9 px-4 text-sm",
       [ButtonSize.sm]: "h-10 px-5 text-sm",
       [ButtonSize.base]: "h-11 px-6 text-base",
-      [ButtonSize.lg]: "h-12 px-7 text-base"
+      [ButtonSize.lg]: "h-12 px-7 text-base",
+      [ButtonSize.xl]: "h-14 px-9 text-lg"
     },
     variant: {
       [ButtonVariant.primary]: "bg-primary text-secondary",

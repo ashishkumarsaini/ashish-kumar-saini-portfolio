@@ -12,7 +12,7 @@ export const NavigationMenu: FC<{ isOpened: boolean, onToggle: () => void }> = (
             <li>
               <Link href="/" onClick={onToggle}>
                 <Text>
-                  <Text type={TextType.span} size={TextSize.xl}>Home.</Text>
+                  <Text type={TextType.span} size={TextSize.xl} className="font-bold">Home.</Text>
                   <Text type={TextType.span} size={TextSize.xs} className="font-bold text-muted-foreground">(01)</Text>
                 </Text>
               </Link>
@@ -20,7 +20,7 @@ export const NavigationMenu: FC<{ isOpened: boolean, onToggle: () => void }> = (
             <li>
               <Link href="/about-me" onClick={onToggle}>
                 <Text>
-                  <Text type={TextType.span} size={TextSize.xl}>About Me.</Text>
+                  <Text type={TextType.span} size={TextSize.xl} className="font-bold">About Me.</Text>
                   <Text type={TextType.span} size={TextSize.xs} className="font-bold text-muted-foreground">(02)</Text>
                 </Text>
               </Link>
@@ -28,7 +28,7 @@ export const NavigationMenu: FC<{ isOpened: boolean, onToggle: () => void }> = (
             <li>
               <Link href="/skills-and-projects" onClick={onToggle}>
                 <Text>
-                  <Text type={TextType.span} size={TextSize.xl}>Skills & Projects</Text>
+                  <Text type={TextType.span} size={TextSize.xl} className="font-bold">Skills & Projects</Text>
                   <Text type={TextType.span} size={TextSize.xs} className="font-bold text-muted-foreground">(03)</Text>
                 </Text>
               </Link>
@@ -36,7 +36,7 @@ export const NavigationMenu: FC<{ isOpened: boolean, onToggle: () => void }> = (
             <li>
               <Link href="/projects" onClick={onToggle}>
                 <Text>
-                  <Text type={TextType.span} size={TextSize.xl}>Projects.</Text>
+                  <Text type={TextType.span} size={TextSize.xl} className="font-bold">Projects.</Text>
                   <Text type={TextType.span} size={TextSize.xs} className="font-bold text-muted-foreground">(04)</Text>
                 </Text>
               </Link>
@@ -44,7 +44,7 @@ export const NavigationMenu: FC<{ isOpened: boolean, onToggle: () => void }> = (
             <li>
               <Link href="/blogs" onClick={onToggle}>
                 <Text>
-                  <Text type={TextType.span} size={TextSize.xl}>Blogs.</Text>
+                  <Text type={TextType.span} size={TextSize.xl} className="font-bold">Blogs.</Text>
                   <Text type={TextType.span} size={TextSize.xs} className="font-bold text-muted-foreground">(05)</Text>
                 </Text>
               </Link>
