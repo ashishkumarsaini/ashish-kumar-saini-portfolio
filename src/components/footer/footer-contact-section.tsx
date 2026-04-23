@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react"
 
 export const FooterContactSection = () => {
   return (
-    <div className="px-3 mb-10">
+    <div className="p-2 md:p-4 mb-5 md:mb-10">
       <div className="bg-primary text-secondary rounded-lg p-5 py-20">
         <div className="flex flex-col gap-10 items-center justify-center">
           <div>

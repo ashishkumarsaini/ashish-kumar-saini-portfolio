@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter_Tight } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/header/header";
-import { Footer } from "@/components/footer";
+
+import { AppLayoutWrapper } from "./components/app-layout-wrapper";
 
 const roboto = Inter_Tight({
   subsets: ["latin"],
@@ -19,16 +19,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} antialiased`}
+        className={`${roboto.className} antialiased relative h-screen bg-black`}
       >
-        <Header />
-        <main className="mx-auto max-w-[1250px]">
+        <AppLayoutWrapper>
           {children}
-        </main>
-        <Footer />
+        </AppLayoutWrapper>
       </body>
     </html>
   );
