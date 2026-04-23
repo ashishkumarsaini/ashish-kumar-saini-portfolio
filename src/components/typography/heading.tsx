@@ -4,6 +4,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 export enum HeadingSize {
+  xxs = 'xxs',
   xs = 'xs',
   sm = 'sm',
   base = 'base',
@@ -22,9 +23,10 @@ export enum HeadingLevel {
   h5 = 'h5',
 }
 
-const headingVariants = cva('font-medium tracking-wide', {
+const headingVariants = cva('font-medium tracking-wide font-bold', {
   variants: {
     size: {
+      [HeadingSize.xxs]: "text-base",
       [HeadingSize.xs]: "text-xl",
       [HeadingSize.sm]: "text-2xl",
       [HeadingSize.base]: "text-3xl",
