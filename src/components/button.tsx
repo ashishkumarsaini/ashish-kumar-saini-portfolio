@@ -13,8 +13,8 @@ export enum ButtonSize {
 }
 
 export enum ButtonVariant {
-  primary = "bg-primary",
-  secondary = "bg-secondary",
+  primary = "primary",
+  secondary = "secondary",
   muted = "muted"
 }
 

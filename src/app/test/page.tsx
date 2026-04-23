@@ -1,3 +1,4 @@
+import { Badge, BadgeSize, BadgeVariant } from "@/components/badge";
 import { Button, ButtonSize, ButtonVariant } from "@/components/button";
 import { Heading, HeadingSize, Text, TextSize } from "@/components/typography";
 
@@ -32,6 +33,12 @@ const TestPage = () => {
       <Button size={ButtonSize.lg}>lg</Button>
       <Button size={ButtonSize.lg} variant={ButtonVariant.primary}>primary</Button>
       <Button size={ButtonSize.lg} variant={ButtonVariant.secondary}>secondary</Button>
+      Badge
+      <Badge variant={BadgeVariant.primary}>Primary</Badge>
+      <Badge variant={BadgeVariant.secondary}>Secondary</Badge>
+      <Badge variant={BadgeVariant.primary} size={BadgeSize.sm}>sm</Badge>
+      <Badge variant={BadgeVariant.primary} size={BadgeSize.base}>base</Badge>
+      <Badge variant={BadgeVariant.primary} size={BadgeSize.lg}>Primary</Badge>
     </div>
   )
 }

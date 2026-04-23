@@ -6,9 +6,9 @@ import Link from "next/link"
 
 export const HeroSection = () => {
   return (
-    <section>
-      <div className="grid grid-cols-12 grid-rows-12">
-        <div className="col-span-12 col-start-1 bg-muted w-full rounded-lg p-4 py-10 md:py-30 relative">
+    <section className="pt-5 pb-25">
+      <div>
+        <div className="bg-muted w-full rounded-lg p-4 py-10 md:py-30 relative">
           <Text>
             Hello! I’m Ashish.
           </Text>
