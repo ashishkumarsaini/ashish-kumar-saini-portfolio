@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Text, TextSize } from "../typography"
 import { Button, ButtonSize, ButtonVariant } from "../button"
+import { ArrowRight } from "lucide-react"
 
 export const FooterContactSection = () => {
   return (
@@ -19,9 +20,11 @@ export const FooterContactSection = () => {
           </div>
           <div>
             <Link href="/contact">
-              <Button size={ButtonSize.lg} variant={ButtonVariant.secondary}>
-                Contact Me
+              <Button size={ButtonSize.lg} variant={ButtonVariant.secondary} className="flex items-center gap-2">
+                <span>Contact Me</span>
+                <ArrowRight size={15} />
               </Button>
+
             </Link>
           </div>
         </div>

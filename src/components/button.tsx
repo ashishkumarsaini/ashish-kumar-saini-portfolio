@@ -32,6 +32,7 @@ const buttonVariants = cva('tracking-wide block rounded-sm cursor-pointer', {
   },
   defaultVariants: {
     size: ButtonSize.base,
+    variant: ButtonVariant.primary
   }
 });
 
