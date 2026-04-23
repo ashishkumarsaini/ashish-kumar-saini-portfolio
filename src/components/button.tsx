@@ -1,3 +1,4 @@
+'use client';
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 
@@ -39,7 +40,8 @@ const buttonVariants = cva('tracking-wide block rounded-sm cursor-pointer', {
 type ButtonProps = {
   className?: string,
   children: React.ReactNode,
-} & React.ComponentPropsWithRef<typeof buttonVariants> & VariantProps<typeof buttonVariants>;
+  onClick?: () => void
+} & React.ComponentPropsWithRef<typeof buttonVariants> & VariantProps<typeof buttonVariants> & React.ComponentProps<'button'>;
 
 export const Button: React.FC<ButtonProps> = ({ size, variant, className, children, ...restProps }) => {
   return (

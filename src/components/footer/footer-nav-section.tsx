@@ -7,7 +7,9 @@ export const FooterNavSection = () => {
   const currentDate = new Date();
   const currentTime = currentDate.toLocaleTimeString('hi-IN', { hour: 'numeric', minute: 'numeric', hour12: true })
   const hours = currentDate.getHours();
-  const isPM = hours >= 12;
+  console.log(currentDate);
+
+  const isDayTime = hours >= 6 && hours < 18;
 
   return (
     <div className="bg-muted rounded-lg flex flex-col px-3 py-3">
@@ -35,7 +37,7 @@ export const FooterNavSection = () => {
               <Text size={TextSize.xs} type={TextType.span}>Time in India -</Text>
               <div className="flex items-center justify-end gap-1 ">
                 <Text size={TextSize.xs} type={TextType.span}>{currentTime}</Text>
-                {isPM ? <Moon size={15} className="text-black" /> : <Sun size={15} className="text-orange-500" />}
+                {!isDayTime ? <Moon size={15} className="text-black" /> : <Sun size={15} className="text-orange-500" />}
               </div>
             </div>
           </div>

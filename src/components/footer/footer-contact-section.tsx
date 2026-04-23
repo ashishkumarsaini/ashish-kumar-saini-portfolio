@@ -24,7 +24,6 @@ export const FooterContactSection = () => {
                 <span>Contact Me</span>
                 <ArrowRight size={15} />
               </Button>
-
             </Link>
           </div>
         </div>
