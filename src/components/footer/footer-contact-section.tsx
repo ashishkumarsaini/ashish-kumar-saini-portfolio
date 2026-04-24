@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react"
 export const FooterContactSection = () => {
   return (
     <div className="p-2 md:p-4 mb-5 md:mb-10">
-      <div className="text-secondary rounded-lg p-5 py-20" style={{ backgroundImage: `url("../bg-one.png")` }}>
+      <div className="bg-cover text-secondary rounded-lg p-5 py-20" style={{ backgroundImage: `url("../bg-three.png")` }}>
         <div className="flex flex-col gap-10 items-center justify-center">
           <div>
             <Text size={TextSize.base}>

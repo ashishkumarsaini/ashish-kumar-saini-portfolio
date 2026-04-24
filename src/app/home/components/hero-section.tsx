@@ -12,7 +12,7 @@ export const HeroSection = () => {
           <Text>
             Hello! I’m Ashish.
           </Text>
-          <Heading size={HeadingSize.xxl} level={HeadingLevel.h2} className="mt-10">
+          <Heading size={HeadingSize.xxl} level={HeadingLevel.h1} className="mt-10">
             <span>Full-stack developer with a passion for crafting </span>
             <RotateWords words={[
               'digital tools that people enjoy using.',

@@ -34,17 +34,17 @@ export const NavigationMenu: FC<{ isOpened: boolean, onToggle: () => void }> = (
               </Link>
             </li>
             <li>
-              <Link href="/projects" onClick={onToggle}>
+              <Link href="/blogs" onClick={onToggle}>
                 <Text>
-                  <Text type={TextType.span} size={TextSize.xl} className="font-bold">Projects.</Text>
+                  <Text type={TextType.span} size={TextSize.xl} className="font-bold">Blogs.</Text>
                   <Text type={TextType.span} size={TextSize.xs} className="font-bold text-muted-foreground">(04)</Text>
                 </Text>
               </Link>
             </li>
             <li>
-              <Link href="/blogs" onClick={onToggle}>
+              <Link href="/contact" onClick={onToggle}>
                 <Text>
-                  <Text type={TextType.span} size={TextSize.xl} className="font-bold">Blogs.</Text>
+                  <Text type={TextType.span} size={TextSize.xl} className="font-bold">Contact.</Text>
                   <Text type={TextType.span} size={TextSize.xs} className="font-bold text-muted-foreground">(05)</Text>
                 </Text>
               </Link>
