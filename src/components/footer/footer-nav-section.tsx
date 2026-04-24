@@ -72,15 +72,15 @@ export const FooterNavSection = () => {
           <div className="rounded-md bg-neutral-200 h-full p-4">
             <Heading size={HeadingSize.xxs} className="mb-4">Socials</Heading>
             <div className="flex flex-col gap-4">
-              <Link href="https://www.linkedin.com/in/devaksaini/" className="flex items-center gap-2">
+              <Link target="_blank" href="https://www.linkedin.com/in/devaksaini/" className="flex items-center gap-2">
                 <Linkedin size={20} />
                 <Text size={TextSize.sm}>LinkedIn</Text>
               </Link>
-              <Link href="https://x.com/devaksaini" className="flex items-center gap-2">
+              <Link target="_blank" href="https://x.com/devaksaini" className="flex items-center gap-2">
                 <Twitter size={20} />
                 <Text size={TextSize.sm}>X</Text>
               </Link>
-              <Link href="https://github.com/ashishkumarsaini" className="flex items-center gap-2">
+              <Link target="_blank" href="https://github.com/ashishkumarsaini" className="flex items-center gap-2">
                 <Github size={20} />
                 <Text size={TextSize.sm}>Github</Text>
               </Link>
