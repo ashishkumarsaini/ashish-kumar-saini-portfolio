@@ -26,9 +26,6 @@ export default function ContactPage() {
     setFormData((prev) => ({ ...prev, [fieldName]: fieldValue }));
   };
 
-  console.log(formData);
-
-
   const handleSubmit = () => { }
 
   const messageMax = 750;

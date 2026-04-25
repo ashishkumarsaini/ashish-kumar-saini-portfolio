@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export const AboutSection = () => {
   return (
-    <section className="pt-5 pb-25">
+    <div>
       <Heading level={HeadingLevel.h2} className="w-fit">
         <Text type={TextType.span} size={TextSize.lg}>
           About&nbsp;
@@ -46,6 +46,6 @@ export const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
