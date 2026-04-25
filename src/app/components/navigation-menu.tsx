@@ -1,11 +1,16 @@
+import { Button } from "@/components/button"
 import { Text, TextSize, TextType } from "@/components/typography"
 import { cn } from "@/lib/utils"
+import { PanelRightClose } from "lucide-react"
 import Link from "next/link"
 import { FC } from "react"
 
 export const NavigationMenu: FC<{ isOpened: boolean, onToggle: () => void }> = ({ isOpened, onToggle }) => {
   return (
     <div className={cn("fixed top-0 bottom-0 right-0 p-5 py-25 translate-x-[260px] transition-all duration-300", { "translate-x-0": isOpened })}>
+      <Button onClick={onToggle} className="top-10 right-5 absolute">
+        <PanelRightClose size={20} />
+      </Button>
       <div className="h-full text-secondary flex items-center justify-center">
         <nav>
           <ul className="flex flex-col items-end gap-10">

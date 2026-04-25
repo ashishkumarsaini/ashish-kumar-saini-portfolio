@@ -20,9 +20,9 @@ export const AboutDetailsSection = () => {
               Outside of work, I spend time exploring new technologies, building side projects, and continuously refining my skills. I believe in learning by building and constantly pushing my limits to grow as a developer.
             </Text>
             <div className="mt-4">
-              <Link href="/contact">
+              <Link href="/skills-and-projects">
                 <Button size={ButtonSize.xl} className="flex items-center gap-2">
-                  <span>Skills and Experiences</span>
+                  <span>Skills and Projects</span>
                   <ArrowRight size={15} />
                 </Button>
               </Link>

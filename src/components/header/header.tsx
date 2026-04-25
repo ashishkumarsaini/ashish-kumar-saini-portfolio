@@ -5,10 +5,11 @@ import { ArrowRight, HamburgerIcon } from "lucide-react";
 
 import { Text, TextType } from "../typography";
 import { Button, ButtonSize, ButtonVariant } from "../button";
+import { cn } from "@/lib/utils";
 
-export function Header({ onToggle }: { onToggle: () => void }) {
+export function Header({ onToggle, isNavOpened }: { onToggle: () => void, isNavOpened: boolean }) {
   return (
-    <header className="w-full sticky top-0 left-0 right-0 z-51 duration-300 bg-background/80 backdrop-blur-xs border-b border-border">
+    <header className={cn("w-full fixed top-0 left-0 right-0 z-51 duration-300 bg-background/80 backdrop-blur-xs border-b border-border", { "sticky": isNavOpened })}>
       <div className="h-20 mx-auto max-w-[1250px] px-4 sm:px-8 flex items-center justify-between">
         <Link
           href="/"
