@@ -7,7 +7,6 @@ export const FooterNavSection = () => {
   const currentDate = new Date();
   const currentTime = currentDate.toLocaleTimeString('hi-IN', { hour: 'numeric', minute: 'numeric', hour12: true })
   const hours = currentDate.getHours();
-  console.log(currentDate);
 
   const isDayTime = hours >= 6 && hours < 18;
 
