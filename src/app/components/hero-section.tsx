@@ -7,7 +7,7 @@ import Link from "next/link"
 export const HeroSection = () => {
   return (
     <div>
-      <div className="bg-muted w-full rounded-lg p-4 py-10 md:py-30 relative">
+      <div className="bg-muted w-full rounded-lg p-4 py-10 md:py-30 md:px-8 relative">
         <Text>
           Hello! I’m Ashish.
         </Text>

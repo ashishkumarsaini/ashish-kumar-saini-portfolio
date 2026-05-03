@@ -19,7 +19,7 @@ export const Certifications = () => {
     {
       title: "Mobile Dev Cohort 2026",
       org: "ChaiCode.com",
-      status: CourseStatus.upcomming,
+      status: CourseStatus.inProgress,
       desc: "Focused on full-stack development with modern tools and real-world projects.",
       gridClass: 'col-span-4 row-span-3 col-start-5'
     },
