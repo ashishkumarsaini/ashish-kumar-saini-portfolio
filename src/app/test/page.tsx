@@ -4,7 +4,7 @@ import { Heading, HeadingSize, Text, TextSize } from "@/components/typography";
 
 const TestPage = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-3 overflow-hidden">
       Text
       <Text size={TextSize.xs}>xs</Text>
       <Text size={TextSize.sm}>sm</Text>

@@ -47,7 +47,7 @@ export const TestimonialsSection = () => {
           <div>
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border bg-background/90 px-3 py-2 text-sm font-medium text-muted-foreground shadow-sm">
               <Sparkles size={16} className="text-foreground" />
-              Trusted by collaborators
+              Trusted by peoples
             </div>
             <Heading level={HeadingLevel.h2} size={HeadingSize.lg} className="max-w-3xl">
               <Text type={TextType.span} size={TextSize.xl}>
@@ -64,7 +64,7 @@ export const TestimonialsSection = () => {
         </div>
 
         <div className="grid gap-5 lg:grid-cols-12">
-          <div className="relative min-h-[380px] overflow-hidden rounded-lg border bg-foreground shadow-sm lg:col-span-4">
+          <div className="relative min-h-[300px] overflow-hidden rounded-lg border bg-foreground shadow-sm sm:min-h-[380px] lg:col-span-4">
             <Image
               fill
               src="/about-2.png"
@@ -75,9 +75,9 @@ export const TestimonialsSection = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
           </div>
 
-          <article className="flex min-h-[380px] flex-col justify-between rounded-lg border bg-background p-7 shadow-sm lg:col-span-8 lg:p-9">
+          <article className="flex min-h-[320px] flex-col justify-between rounded-lg border bg-background p-5 shadow-sm sm:min-h-[380px] sm:p-7 lg:col-span-8 lg:p-9">
             <Quote size={40} className="text-muted-foreground" strokeWidth={1.5} />
-            <Heading level={HeadingLevel.h3} size={HeadingSize.sm} className="max-w-3xl leading-tight">
+            <Heading level={HeadingLevel.h3} size={HeadingSize.sm} className="max-w-3xl text-2xl leading-tight sm:text-3xl">
               {featuredTestimonial.quote}
             </Heading>
             <div className="flex items-end justify-between gap-4 mt-4">
@@ -98,7 +98,7 @@ export const TestimonialsSection = () => {
           {testimonials.map((testimonial) => (
             <article
               key={testimonial.name}
-              className="flex min-h-[250px] flex-col justify-between rounded-lg border bg-background p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-foreground/5 lg:col-span-4"
+              className="flex min-h-[250px] flex-col justify-between rounded-lg border bg-background p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-foreground/5 sm:p-6 lg:col-span-4"
             >
               <Text size={TextSize.xs} className="font-mono leading-relaxed tracking-wide">
                 {testimonial.quote}

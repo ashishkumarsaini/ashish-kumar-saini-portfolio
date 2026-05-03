@@ -12,12 +12,12 @@ export const FooterNavSection = () => {
 
   return (
     <div className="bg-muted rounded-lg flex flex-col px-3 py-3">
-      <div className="grid grid-cols-12 grid-rows-6 gap-4">
-        <div className="col-span-4 row-span-5">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-12 md:grid-rows-6">
+        <div className="md:col-span-4 md:row-span-5">
           <div className="h-full flex flex-col gap-2">
             <div className="rounded-md bg-neutral-200 p-4 grow flex flex-col justify-between">
               <div>
-                <Text className="font-bold text-[1.75rem]" size={TextSize.xl}>
+                <Text className="break-words font-bold text-[1.4rem] sm:text-[1.75rem]" size={TextSize.xl}>
                   <span>ashishkumarsaini</span>
                   <span className="text-muted-foreground">.dev</span>
                 </Text>
@@ -41,7 +41,7 @@ export const FooterNavSection = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-4 row-span-2 col-start-5 flex flex-col">
+        <div className="flex flex-col md:col-span-4 md:row-span-2 md:col-start-5">
           <div className="rounded-md bg-neutral-200 h-full p-4">
             <Heading size={HeadingSize.xxs} className="mb-4">Contact</Heading>
             <div className="flex flex-col gap-4">
@@ -56,7 +56,7 @@ export const FooterNavSection = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-4 row-span-5 col-start-9">
+        <div className="md:col-span-4 md:row-span-5 md:col-start-9">
           <div className="rounded-md bg-neutral-200 h-full p-4">
             <Heading size={HeadingSize.xxs} className="mb-4">Quick Links</Heading>
             <div className="flex flex-col gap-2">
@@ -67,7 +67,7 @@ export const FooterNavSection = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-4 row-span-3 col-start-5 row-start-3">
+        <div className="md:col-span-4 md:row-span-3 md:col-start-5 md:row-start-3">
           <div className="rounded-md bg-neutral-200 h-full p-4">
             <Heading size={HeadingSize.xxs} className="mb-4">Socials</Heading>
             <div className="flex flex-col gap-4">
@@ -86,7 +86,7 @@ export const FooterNavSection = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-12 row-start-6 row-span-1 h-full">
+        <div className="h-full md:col-span-12 md:row-start-6 md:row-span-1">
           <div className="flex items-center justify-center py-5 bg-neutral-200 rounded-md overflow-hidden">
             <Text size={TextSize.xs}>© 2026 Ashish Kumar Saini.</Text>
           </div>

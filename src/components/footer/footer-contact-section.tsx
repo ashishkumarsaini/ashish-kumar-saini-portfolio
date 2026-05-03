@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react"
 export const FooterContactSection = () => {
   return (
     <div className="p-2 md:p-4 mb-5 md:mb-10">
-      <div className="bg-cover text-secondary rounded-lg p-5 py-20" style={{ backgroundImage: `url("../bg-three.png")` }}>
+      <div className="bg-cover text-secondary rounded-lg p-5 py-14 sm:py-20" style={{ backgroundImage: `url("../bg-three.png")` }}>
         <div className="flex flex-col gap-10 items-center justify-center">
           <div>
             <Text size={TextSize.base}>
@@ -15,9 +15,9 @@ export const FooterContactSection = () => {
             </Text>
           </div>
           <div>
-            <Text size={TextSize.xxxl} className="font-bold text-neutral-400">
+            <Text size={TextSize.xxxl} className="text-center text-4xl font-bold text-neutral-400 sm:text-5xl">
               Let’s build something&nbsp;
-              <Text type={TextType.span} size={TextSize.xxxl} className="text-secondary">impactful.</Text>
+              <Text type={TextType.span} size={TextSize.xxxl} className="text-4xl text-secondary sm:text-5xl">impactful.</Text>
             </Text>
           </div>
           <div>

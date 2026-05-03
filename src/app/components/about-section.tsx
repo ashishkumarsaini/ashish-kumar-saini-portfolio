@@ -15,15 +15,15 @@ export const AboutSection = () => {
           Me.
         </Text>
       </Heading>
-      <div className="mt-7 grid grid-cols-12 gap-5">
-        <div className="col-span-6">
+      <div className="mt-7 grid grid-cols-1 gap-5 lg:grid-cols-12">
+        <div className="lg:col-span-6">
           <div className="aspect-video relative rounded-[10px] overflow-hidden">
             <Image fill src='/about.png' alt="About Cover Image" className="absolute" style={{ objectFit: 'cover' }} />
           </div>
         </div>
-        <div className="col-span-6 col-start-7">
+        <div className="lg:col-span-6 lg:col-start-7">
           <div className="relative flex items-center">
-            <Heading level={HeadingLevel.h3}>
+            <Heading level={HeadingLevel.h3} className="text-3xl leading-tight sm:text-4xl">
               Building web from concept to <span className="text-muted-foreground">code.</span>
             </Heading>
           </div>

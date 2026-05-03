@@ -14,28 +14,28 @@ export const Certifications = () => {
       org: "ChaiCode.com",
       status: CourseStatus.inProgress,
       desc: "Focused on full-stack development with modern tools and real-world projects.",
-      gridClass: 'col-span-4 row-span-6'
+      gridClass: 'lg:col-span-4 lg:row-span-6'
     },
     {
       title: "Mobile Dev Cohort 2026",
       org: "ChaiCode.com",
       status: CourseStatus.inProgress,
       desc: "Focused on full-stack development with modern tools and real-world projects.",
-      gridClass: 'col-span-4 row-span-3 col-start-5'
+      gridClass: 'lg:col-span-4 lg:row-span-3 lg:col-start-5'
     },
     {
       title: "React Native Development",
       org: "LearnCodeOnline.in",
       status: CourseStatus.completed,
       desc: "Built cross-platform mobile apps using React Native and modern UI patterns.",
-      gridClass: 'col-span-4 row-span-3 col-start-9'
+      gridClass: 'lg:col-span-4 lg:row-span-3 lg:col-start-9'
     },
     {
       title: "Full Stack MERN Bootcamp",
       org: "LearnCodeOnline.in",
       status: CourseStatus.completed,
       desc: "Hands-on experience with MongoDB, Express, React, and Node.js.",
-      gridClass: 'col-span-8 row-span-3 col-start-5 row-start-4'
+      gridClass: 'lg:col-span-8 lg:row-span-3 lg:col-start-5 lg:row-start-4'
     }
   ];
 
@@ -48,7 +48,7 @@ export const Certifications = () => {
         </Heading>
 
         <div className="max-w-5xl mx-auto space-y-6 mt-10">
-          <div className="grid grid-cols-12 grid-rows-6 gap-6">
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:grid-rows-6">
             {certifications.map((item, index) => (
               <div
                 key={index}

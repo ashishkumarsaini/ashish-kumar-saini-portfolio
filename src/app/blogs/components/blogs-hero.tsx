@@ -14,7 +14,7 @@ export const BlogsHero = ({ totalPosts, updatedAt }: BlogsHeroProps) => {
           <PenLine size={16} className="text-foreground" />
           Hashnode Blogs
         </div>
-        <Heading level={HeadingLevel.h1} size={HeadingSize.xxxl} className="max-w-4xl text-5xl leading-[0.95] sm:text-6xl lg:text-7xl">
+        <Heading level={HeadingLevel.h1} size={HeadingSize.xxxl} className="max-w-4xl text-4xl leading-tight sm:text-6xl lg:text-7xl lg:leading-[0.95]">
           Blogs that turn product problems into working systems.
         </Heading>
         <Text className="mt-6 max-w-2xl text-muted-foreground">
@@ -22,7 +22,7 @@ export const BlogsHero = ({ totalPosts, updatedAt }: BlogsHeroProps) => {
         </Text>
       </div>
 
-      <div className="grid gap-3 grid-cols-3 lg:pb-2">
+      <div className="grid gap-3 sm:grid-cols-3 lg:pb-2">
         <div className="rounded-lg border bg-background/80 p-4 shadow-sm backdrop-blur">
           <BookOpen size={20} />
           <Text size={TextSize.xs} className="mt-5 text-muted-foreground">Published blogs</Text>

@@ -11,11 +11,11 @@ export const AboutHeroSection = () => {
           Me.
         </Text>
       </Text>
-      <div className="bg-cover rounded-lg h-100 relative mt-4" style={{ backgroundImage: `url('../bg-two.png')` }}>
-        <div className="absolute bg-white p-4 rounded-br-lg">
-          <Heading size={HeadingSize.xxl} level={HeadingLevel.h1} className="flex flex-col">
+      <div className="bg-cover rounded-lg min-h-[360px] sm:h-100 relative mt-4 overflow-hidden" style={{ backgroundImage: `url('../bg-two.png')` }}>
+        <div className="bg-white p-4 rounded-br-lg sm:absolute">
+          <Heading size={HeadingSize.xxl} level={HeadingLevel.h1} className="flex flex-col text-4xl leading-none sm:text-6xl">
             Full Stack
-            <Text type={TextType.span} size={TextSize.xxxxl} className="text-muted-foreground">Developer</Text>
+            <Text type={TextType.span} size={TextSize.xxxxl} className="text-5xl text-muted-foreground sm:text-8xl">Developer</Text>
           </Heading>
         </div>
         <div className="absolute bottom-0 p-4">

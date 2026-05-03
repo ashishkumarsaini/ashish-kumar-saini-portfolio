@@ -1,8 +1,3 @@
-import { Button, ButtonSize } from "@/components/button";
-import { Heading, HeadingLevel, HeadingSize, Text, TextSize, TextType } from "@/components/typography";
-import { ArrowRight } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
 import { Certifications, ExperiencesSection } from "./components";
 import { AboutHeroSection } from "./components/hero-section";
 import { AboutDetailsSection } from "./components/details-section";

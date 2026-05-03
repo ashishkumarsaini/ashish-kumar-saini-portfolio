@@ -115,9 +115,9 @@ const backendTech = [
 
 export default function SkillsPage() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="mt-4">
-        <Heading level={HeadingLevel.h1} size={HeadingSize.lg}>
+        <Heading level={HeadingLevel.h1} size={HeadingSize.lg} className="text-4xl sm:text-5xl">
           Skills
         </Heading>
         <div className="mt-10">
@@ -125,13 +125,13 @@ export default function SkillsPage() {
             Frontend&nbsp;
             <span className="text-muted-foreground">Technologies</span>
           </Heading>
-          <div className="mt-4 flex flex-col gap-8">
+          <div className="mt-4 flex flex-col gap-4 sm:gap-8">
             {frontendTech.map((techItems, rowIndex) => (
-              <div key={rowIndex} className="flex items-center gap-4">
+              <div key={rowIndex} className="flex flex-wrap items-center gap-4">
                 {techItems.map((item, itemIndex) => (
-                  <div key={itemIndex} className="w-[200px] h-[70px] bg-muted border shadow-lg rounded-md p-4 flex items-center gap-4">
+                  <div key={itemIndex} className="h-[70px] w-full min-w-0 bg-muted border shadow-lg rounded-md p-4 flex items-center gap-4 sm:w-[200px]">
                     {item.svg}
-                    <Text>{item.name}</Text>
+                    <Text className="truncate">{item.name}</Text>
                   </div>
                 ))}
               </div>
@@ -143,13 +143,13 @@ export default function SkillsPage() {
             Backend&nbsp;
             <span className="text-muted-foreground">Technologies</span>
           </Heading>
-          <div className="mt-4 flex flex-col gap-8">
+          <div className="mt-4 flex flex-col gap-4 sm:gap-8">
             {backendTech.map((techItems, rowIndex) => (
-              <div key={rowIndex} className="flex items-center gap-4">
+              <div key={rowIndex} className="flex flex-wrap items-center gap-4">
                 {techItems.map((item, itemIndex) => (
-                  <div key={itemIndex} className="w-[200px] h-[70px] bg-muted border shadow-lg rounded-md p-4 flex items-center gap-4">
+                  <div key={itemIndex} className="h-[70px] w-full min-w-0 bg-muted border shadow-lg rounded-md p-4 flex items-center gap-4 sm:w-[200px]">
                     {item.svg}
-                    <Text>{item.name}</Text>
+                    <Text className="truncate">{item.name}</Text>
                   </div>
                 ))}
               </div>

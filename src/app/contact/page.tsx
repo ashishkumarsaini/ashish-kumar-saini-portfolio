@@ -31,14 +31,14 @@ export default function ContactPage() {
   const messageMax = 750;
 
   return (
-    <section className="min-h-screen text-gray-900 px-6 py-16" onSubmit={handleSubmit}>
+    <section className="min-h-screen px-3 py-10 text-gray-900 sm:px-6 sm:py-16" onSubmit={handleSubmit}>
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}
         <div className="text-center mb-12">
-          <Heading size={HeadingSize.xxl} level={HeadingLevel.h1} className="mt-10">
+          <Heading size={HeadingSize.xxl} level={HeadingLevel.h1} className="mt-6 text-4xl leading-tight sm:mt-10 sm:text-6xl">
             <span className="text-gray-400">Say Hi!</span>{" "}
-            and tell me about <br /> your idea
+            and tell me about <br className="hidden sm:block" /> your idea
           </Heading>
 
           <Text className="mt-6">
@@ -47,10 +47,10 @@ export default function ContactPage() {
         </div>
 
         {/* Form */}
-        <form className="space-y-10">
+        <form className="space-y-8 sm:space-y-10">
 
           {/* Row */}
-          <div className="grid md:grid-cols-2 gap-10">
+          <div className="grid gap-8 md:grid-cols-2 md:gap-10">
             {/* Name */}
             <div>
               <label className="block mb-2">
@@ -102,7 +102,7 @@ export default function ContactPage() {
                 <Button
                   key={value}
                   type="button"
-                  className={cn("px-5 py-2", { "bg-primary text-white": formData.topic === value })}
+                  className={cn("px-5 py-2 text-sm sm:text-base", { "bg-primary text-white": formData.topic === value })}
                   variant={ButtonVariant.secondary}
                   onClick={() => handleChangeData("topic", value)}
                 >

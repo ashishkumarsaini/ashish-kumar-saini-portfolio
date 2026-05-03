@@ -37,7 +37,7 @@ export const AboutDetailsSection = () => {
       {/* details 2 */}
       <div className="pt-5">
         <div className="grid grid-cols-12 gap-10">
-          <div className="col-span-12 lg:col-span-6 flex flex-row lg:flex-col gap-10">
+          <div className="col-span-12 lg:col-span-6 flex flex-col gap-8 sm:flex-row lg:flex-col lg:gap-10">
             <div>
               <Text>
                 <Text type={TextType.span} size={TextSize.xxxxl} className="font-bold">5</Text>

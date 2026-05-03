@@ -49,7 +49,7 @@ export const FeaturedBlogCard = ({ post }: FeaturedBlogCardProps) => {
               {post.readTimeInMinutes ?? 4} min read
             </span>
           </div>
-          <Heading level={HeadingLevel.h2} size={HeadingSize.lg} className="mt-5 leading-tight transition group-hover:text-muted-foreground">
+          <Heading level={HeadingLevel.h2} size={HeadingSize.lg} className="mt-5 text-3xl leading-tight transition group-hover:text-muted-foreground sm:text-4xl">
             {post.title}
           </Heading>
           <Text className="mt-4 text-muted-foreground">
