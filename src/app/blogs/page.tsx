@@ -13,6 +13,7 @@ const BlogsPage = async () => {
             isTeam
             title
             posts(first: 10) {
+              totalDocuments
               edges {
                 node {
                   id
@@ -39,6 +40,7 @@ const BlogsPage = async () => {
 
   const result = await response.json();
   const posts: HashnodePostEdge[] = result.data?.publication?.posts.edges || [];
+  const totalPublishedPosts = result.data?.publication?.posts.totalDocuments ?? posts.length;
   const [featuredPost, ...remainingPosts] = posts;
   const updatedAt = new Intl.DateTimeFormat("en", {
     hour: "numeric",
@@ -54,7 +56,7 @@ const BlogsPage = async () => {
         <div className="absolute right-4 top-20 -z-10 hidden h-44 w-44 rounded-full border border-foreground/10 md:block" />
 
         <div className="mx-auto max-w-6xl">
-          <BlogsHero totalPosts={posts.length} updatedAt={updatedAt} />
+          <BlogsHero totalPosts={totalPublishedPosts} updatedAt={updatedAt} />
           {featuredPost && <FeaturedBlogCard post={featuredPost.node} />}
         </div>
       </section>
