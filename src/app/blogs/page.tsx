@@ -1,10 +1,9 @@
-import { Heading, HeadingSize, Text } from "@/components/typography";
-import Link from "next/link";
+import { BlogsHero, FeaturedBlogCard, HashnodePostEdge, RecentBlogsSection } from "./components";
 
 const BlogsPage = async () => {
-  const response = await fetch('https://gql.hashnode.com/', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+  const response = await fetch("https://gql.hashnode.com/", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
     next: { revalidate: 60 * 60 * 24 },
     body: JSON.stringify({
       query: `
@@ -20,35 +19,49 @@ const BlogsPage = async () => {
                   title
                   brief
                   url
+                  publishedAt
+                  readTimeInMinutes
+                  coverImage {
+                    url
+                  }
+                  tags {
+                    name
+                    slug
+                  }
                 }
               }
             }
           }
         }
-      `
+      `,
     }),
   });
 
   const result = await response.json();
-  const posts = result.data?.publication?.posts.edges || [];
-  const now = new Date().toLocaleTimeString();
+  const posts: HashnodePostEdge[] = result.data?.publication?.posts.edges || [];
+  const [featuredPost, ...remainingPosts] = posts;
+  const updatedAt = new Intl.DateTimeFormat("en", {
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+  }).format(new Date());
 
   return (
-    <div className="max-w-5xl m-auto">
-      <Heading>Blogs</Heading>
-      <small>Last updated at {now}</small>
-      <div className="flex flex-col gap-4 mt-4">
-        {posts.map(({ node }: { node: { id: string, url: string, title: string, brief: string } }) => (
-          <Link target="_blank" href={node.url} key={node.id} className="flex flex-col gap-2 border rounded-md p-4">
-            <Heading size={HeadingSize.sm}>
-              {node.title}
-            </Heading>
-            <Text>{node.brief}...</Text>
-          </Link>
-        ))}
-      </div>
+    <div className="overflow-hidden">
+      <section className="relative isolate pt-6 pb-14 sm:pt-10 sm:pb-18">
+        <div className="absolute inset-x-0 top-0 -z-10 h-[430px] rounded-b-[2rem]" />
+        <div className="absolute left-6 top-10 -z-10 hidden h-32 w-32 rounded-full border border-foreground/10 md:block" />
+        <div className="absolute right-4 top-20 -z-10 hidden h-44 w-44 rounded-full border border-foreground/10 md:block" />
+
+        <div className="mx-auto max-w-6xl">
+          <BlogsHero totalPosts={posts.length} updatedAt={updatedAt} />
+          {featuredPost && <FeaturedBlogCard post={featuredPost.node} />}
+        </div>
+      </section>
+
+      <RecentBlogsSection posts={remainingPosts} />
     </div>
-  )
+  );
 };
 
-export default BlogsPage
+export default BlogsPage;
